@@ -7,7 +7,7 @@ let indexSize = 30;
 function createBoxes(amount) {
     const arrayMaker = Array(amount).fill('');
     arrayMaker.forEach(arrayItem => {
-        const color = Math.floor(Math.random() * 16777215).toString(16);
+        const color = Math.floor(Math.random() * 16777216).toString(16);
 
         boxesEl.insertAdjacentHTML('afterBegin',
             `<div style="width:${indexSize}px; background-color: #${color}; height: ${indexSize}px"></div>`)
